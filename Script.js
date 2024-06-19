@@ -1,5 +1,3 @@
-var container = document.getElementById("container");
-
 function createColumn(size){
     for(let i = 0; i < size; i++){
         let newDiv = document.createElement("div");
@@ -11,12 +9,13 @@ function createColumn(size){
 }
 
 function createRow(size){
-    for(let i = 0; i < size; i++){
+    for(let j = 0; j < size; j++){
         let newRow = document.createElement("div");
         newRow.classList.add("cell-row");
-        newRow.style.width = 600/size + "px";
-        document.getElementById("grid-container").appendChild(newRow);
-        createRow(size);
+        newRow.style.height = 600/size + "px";
+        let columns = document.querySelectorAll(".column");
+        columns[i].appendChild(newRow);
+        
     }
 }
 
