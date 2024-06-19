@@ -15,7 +15,7 @@ function createRow(size) {
         newRow.classList.add("cell-row");
         newRow.style.height = 600 / size + "px";
         let columns = document.querySelectorAll(".column");
-        columns[i].appendChild(newRow);
+        columns[j-1].appendChild(newRow);
     }
 }
 
