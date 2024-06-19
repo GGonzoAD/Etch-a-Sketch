@@ -19,4 +19,4 @@ function createRow(size) {
     }
 }
 
-createColumn(10);
+createColumn(16);
