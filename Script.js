@@ -9,15 +9,14 @@ function createColumn(size) {
     }
 }
 
-function createRow(size){
-    for(let j = 0; j < size; j++){
+function createRow(size) {
+    for (let j = 0; j < size; j++) {
         let newRow = document.createElement("div");
         newRow.classList.add("cell-row");
-        newRow.style.height = 600/size + "px";
+        newRow.style.height = 600 / size + "px";
         let columns = document.querySelectorAll(".column");
         columns[i].appendChild(newRow);
-        
     }
 }
 
-createColumn(16);
+createColumn(10);
