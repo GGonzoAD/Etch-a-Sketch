@@ -1,10 +1,11 @@
-function createColumn(size){
-    for(let i = 0; i < size; i++){
+function createColumn(size) {
+    for (let i = 0; i < size; i++) {
         let newDiv = document.createElement("div");
         newDiv.classList.add("column");
-        newDiv.style.width = 600/size + "px";
+        newDiv.style.width = 600 / size + "px";
         document.getElementById("grid-container").appendChild(newDiv);
         createRow(size);
+
     }
 }
 
