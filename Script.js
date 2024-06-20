@@ -1,3 +1,5 @@
+let Index;
+
 function createColumn(size) {
     for (let i = 0; i < size; i++) {
         let newDiv = document.createElement("div");
@@ -6,7 +8,7 @@ function createColumn(size) {
         console.log(newDiv);
         document.getElementById("grid-container").appendChild(newDiv);
         //createRow(size);
-
+        Index = size;
     }
 }
 
@@ -16,8 +18,8 @@ function createRow(size) {
         newRow.classList.add("cell-row");
         newRow.style.height = 600 / size + "px";
         console.log(newRow);
-        let columns = document.querySelectorAll("column");
-        //columns[i].appendChild(newRow);
+        let columns = document.querySelectorAll(".column");
+        columns[Index].appendChild(newRow);
     }
 }
 
