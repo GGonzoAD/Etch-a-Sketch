@@ -1,4 +1,4 @@
-let Index;
+let Index = 1;
 
 function createColumn(size) {
     for (let i = 0; i < size; i++) {
@@ -8,9 +8,10 @@ function createColumn(size) {
         console.log(newDiv);
         document.getElementById("grid-container").appendChild(newDiv);
         //createRow(size);
-        Index = size;
     }
+    return Index = i;
 }
+console.log(Index);
 
 function createRow(size) {
     for (let j = 0; j < size; j++) {
