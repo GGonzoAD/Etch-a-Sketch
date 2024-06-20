@@ -14,10 +14,11 @@ function createColumn(size) {
                 let columns = document.querySelectorAll(".column");
                 columns[i].appendChild(newRow);
             }
+            
         }
-      createRow(size);
+      
     }
-    
+    createRow(size);
 }
 
 
