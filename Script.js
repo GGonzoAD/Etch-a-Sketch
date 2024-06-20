@@ -25,3 +25,4 @@ function createColumn(size) {
 
 
 createColumn(16);
+createRow(16);
