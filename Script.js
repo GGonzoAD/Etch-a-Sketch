@@ -3,8 +3,9 @@ function createColumn(size) {
         let newDiv = document.createElement("div");
         newDiv.classList.add("column");
         newDiv.style.width = 600 / size + "px";
+        console.log(newDiv);
         document.getElementById("grid-container").appendChild(newDiv);
-        createRow(size);
+        //createRow(size);
 
     }
 }
@@ -14,9 +15,11 @@ function createRow(size) {
         let newRow = document.createElement("div");
         newRow.classList.add("cell-row");
         newRow.style.height = 600 / size + "px";
-        let columns = document.querySelectorAll(".column");
-        columns[j-1].appendChild(newRow);
+        console.log(newRow);
+        let columns = document.querySelectorAll("column");
+        //columns[i].appendChild(newRow);
     }
 }
 
 createColumn(16);
+createRow(16);
