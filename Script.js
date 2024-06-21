@@ -16,13 +16,12 @@ function createColumn(size) {
             }
             
         }
-      
+        createRow(size);
     }
-    createRow(size);
+    
 }
 
 
 
 
 createColumn(16);
-createRow(16);
