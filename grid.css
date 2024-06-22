@@ -13,7 +13,7 @@
 .cell{
     margin-top: 15px;
     margin-bottom: 10px;
-    background-color:aqua;
-    flex: 0 0 25%;
+    color:aqua;
+    flex: 0 10% 25%;
 }
 
