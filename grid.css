@@ -4,18 +4,15 @@
     
 }
 .column{
-    display: flex;
     background-color:aliceblue;
     height:auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    flex-direction: column;
     flex: 0 0 25%;
 }
 .cell{
     margin-top: 15px;
     margin-bottom: 10px;
-    flex-direction: row;
     background-color:aqua;
     flex: 0 0 25%;
 }
