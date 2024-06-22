@@ -5,15 +5,15 @@
 }
 .column{
     background-color:aliceblue;
-    height:auto;
     margin-top: 10px;
     margin-bottom: 10px;
     flex: 0 0 25%;
+    display: flex;
 }
 .cell{
     margin-top: 15px;
     margin-bottom: 10px;
     color:aqua;
-    flex: 0 10% 25%;
+    flex: 0 0 25%;
 }
 
