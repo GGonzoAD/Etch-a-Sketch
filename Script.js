@@ -15,7 +15,7 @@ function createColumn(size) {
 
 
 createColumn(16);
-const Cell = document.getElementById('cell');
+let Cell = document.getElementsByClassName('cell');
 
 Cell.addEventListener("mouseover", event => {
   event.target.style.backgroundColor = "magenta";
