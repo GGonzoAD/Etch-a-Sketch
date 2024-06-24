@@ -15,3 +15,12 @@ function createColumn(size) {
 
 
 createColumn(16);
+const Cell = document.getElementById('grid-container');
+
+Cell.addEventListener("mouseover", event => {
+  event.target.style.backgroundColor = "magenta";
+});
+
+Cell.addEventListener("mouseout", event => {
+  event.target.style.backgroundColor = "rgb(54, 52, 52)";
+});
