@@ -5,6 +5,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:#ffffff;
   text-shadow: 
         0 0 7px #fff,
