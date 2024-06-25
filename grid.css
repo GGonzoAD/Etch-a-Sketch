@@ -28,7 +28,7 @@ body{
     border: 5px solid #8122c0;
     text-transform: uppercase;
     letter-spacing: 10px;
-    cursor: crosshair;
+    cursor: pointer;
     border-radius: 100px;
     transition: 1.5s;
 
