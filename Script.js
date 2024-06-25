@@ -10,8 +10,16 @@ function createColumn(size) {
       }
       gridContainer.appendChild(column)
     }
+    hoverColor();
 }
 
-
+function hoverColor(){
+  let Items = document.querySelectorAll('.cell');
+  Items.forEach(Item => {
+    Item.addEventListener('mouseover', () => {
+      Item.style.backgroundColor = '#b464be';
+    });
+  }); 
+}
 
 createColumn(16);
