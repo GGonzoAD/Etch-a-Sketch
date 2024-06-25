@@ -9,18 +9,18 @@ function createColumn(size) {
           column.appendChild(cell)
         }
         gridContainer.appendChild(column)
+
       }
   }
 
 
 
 createColumn(16);
-let Cell = document.getElementsByClassName('cell');
-
+let Cell = document.getElementsByClassName(".cell");
 Cell.addEventListener("mouseover", event => {
   event.target.style.backgroundColor = "magenta";
-});
+  });
 
-Cell.addEventListener("mouseout", event => {
+  Cell.addEventListener("mouseout", event => {
   event.target.style.backgroundColor = "rgb(54, 52, 52)";
-});
+  });
