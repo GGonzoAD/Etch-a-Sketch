@@ -21,8 +21,21 @@ body{
 .Reset-Button{
     text-align: center;
     display: block;
-    margin:auto;
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#8122c0;
+    font-weight: 400;
+    border: 5px solid #8122c0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    cursor: crosshair;
+    border-radius: 100px;
+    transition: 1.5s;
 
+}
+.Reset-Button:hover{
+    box-shadow: 0 5px 50px 0 #8122c0 inset, 0 5px 50px 0 #8122c0,
+                0 5px 50px 0 #b464be inset, 0 5px 50px 0 #b464be;
 }
 #grid-container{
     display: flex;
