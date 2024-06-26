@@ -29,6 +29,7 @@ function GridReset(){
   var answer = prompt("What grid size would you like?");
   parseInt(answer,10);
   Size = answer;
+  size = Size;
 }
 
 createColumn(16);
