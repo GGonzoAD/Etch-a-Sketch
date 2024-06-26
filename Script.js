@@ -24,13 +24,11 @@ function hoverColor(){
   }); 
 }
 
-let Size = document.querySelector('size');
+let Size = document.querySelectorAll('size');
 function GridReset(){
   var answer = prompt("What grid size would you like?");
   parseInt(answer,10);
   Size = answer;
-  size = Size;
 }
 
 createColumn(16);
-GridReset();
