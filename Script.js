@@ -9,9 +9,11 @@ function createColumn(size) {
         column.appendChild(cell)
       }
       gridContainer.appendChild(column)
+    
     }
     hoverColor();
 }
+
 
 function hoverColor(){
   let Items = document.querySelectorAll('.cell');
@@ -22,4 +24,12 @@ function hoverColor(){
   }); 
 }
 
+let Size = document.querySelector('size');
+function GridReset(){
+  var answer = prompt("What grid size would you like?");
+  parseInt(answer,10);
+  Size = answer;
+}
+
 createColumn(16);
+GridReset();
