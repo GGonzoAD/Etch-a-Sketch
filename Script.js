@@ -12,6 +12,7 @@ function createColumn(size) {
     
     }
     hoverColor();
+    
 }
 
 
@@ -24,11 +25,16 @@ function hoverColor(){
   }); 
 }
 
-let Size = document.querySelectorAll('size');
-function GridReset(){
-  var answer = prompt("What grid size would you like?");
-  parseInt(answer,10);
-  Size = answer;
-}
+
+    function GridReset(){
+    let Size = document.querySelectorAll('#size');
+    let Items = document.querySelectorAll('.cell');
+    Items.forEach(Item => {
+      Item.style.backgroundColor = 'rgb(54, 52, 52)';
+    });
+    var answer = prompt("What grid size would you like?");
+    parseInt(answer,10);
+    Size = answer;
+    }
 
 createColumn(16);
