@@ -27,7 +27,7 @@ function hoverColor(){
 
 
     function GridReset(){
-    let Size = document.querySelectorAll('#size');
+    let Size = document.querySelectorAll("size");
     let Items = document.querySelectorAll('.cell');
     Items.forEach(Item => {
       Item.style.backgroundColor = 'rgb(54, 52, 52)';
